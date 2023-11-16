@@ -1,0 +1,30 @@
+html{
+    font-size: 62.5%;
+}
+.contact{
+    position: relative;
+    top: 4rem;
+    margin-left: 20rem;
+    width: calc(100vw - 40rem);
+    height: auto;
+    text-align: center;
+}   
+.contact h1{
+    font-size: 4rem;
+}
+.contact p{
+    font-size: 3rem;
+}
+@media only screen and (min-width:744px) and (max-width:822px){
+    .contact{
+        margin-left: 0;
+        width: 100vw;
+        top: 8rem;
+    }
+    .contact h1{
+        font-size: 6rem;
+    }
+    .contact p{
+        font-size: 5rem;
+    }
+}

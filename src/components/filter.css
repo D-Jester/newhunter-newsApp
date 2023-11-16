@@ -1,0 +1,88 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    width: 100vw;
+    height: 4.2rem;
+    background-color: rgb(201, 201, 216);
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 0 2px black;
+}
+#type{
+    margin-left: 0.5rem;
+    font-size: 1.4rem;
+}
+.everything{
+    position: relative;
+    height: 100%;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    visibility: hidden;
+}
+#sorting{
+    margin-left: 1rem;
+}
+.topHeadlines{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    position: absolute;
+    height:100%;
+    margin-left: 13.4rem;
+    visibility: visible;     
+}
+#country{
+    margin-right: 0.8rem;
+}
+.keywords{
+    position: absolute;
+    height:100%;
+    width:20rem;
+    right: 4rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+.keywords label{
+    font-size: 1.4rem;
+}
+.keywords input{
+    padding-left: 0.5rem;
+}
+.keywords button{
+    margin-left: 0.8rem;
+    background-color: rgb(150, 131, 131);
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    box-shadow: 1px 2px 1px #3d3737;
+    cursor: pointer;
+}
+.keywords button:hover{
+    color: white;
+}
+@media only screen and (min-width:744px) and (max-width:822px){
+    .filter{
+        margin-top: 8rem;
+        height: 8rem;
+    }
+    #type{
+        margin-left: 0.5rem;
+        font-size: 4rem;        
+    }
+}

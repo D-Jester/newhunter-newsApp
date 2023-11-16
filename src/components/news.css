@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.news{
+    position: relative;
+    top: 4.2rem;
+    height:auto;
+    width: 98vw;
+    margin: auto;
+    padding-top: 4rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 0;
+}
+

@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.header{
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(211, 199, 199);
+    position: fixed;
+    display: flex;
+    box-shadow: 0 0 2px black, 0 0 4px rgb(60, 59, 59), 0 0 6px rgb(137, 133, 133);
+    z-index: 2;
+}
+/* for title part */
+.title{
+    height: 100%;
+    display: flex;
+    font-size:3rem ;
+    width: 20rem;
+    border-right: solid black 2px;
+}
+#news p{
+    position: relative;
+    color: red;
+}
+#news p::before{
+    content: "News";
+    color: yellow;
+    position: absolute;
+    border-right: solid yellow 2px;
+    width: 100%;
+    animation: line1 2s linear infinite;
+    -webkit-animation: line1 2s linear infinite;
+    overflow: hidden;
+}
+#hunter p{
+    position: relative;
+    color: red;
+}
+#hunter p::before{
+    content: 'Hunter';
+    color: yellow;
+    position: absolute;
+    border-right: solid red 2px;
+    width: 0;
+    animation: line2 2s linear infinite;
+    -webkit-animation: line2 2s linear infinite;
+    overflow: hidden;
+}
+@keyframes line1 {
+    0%{width: 0;}
+    50%{width: 100%;}
+    100%{width: 0;}    
+}
+@keyframes line2 {
+    0%{width: 100%;}
+    50%{width: 0;}
+    100%{width: 100%;}    
+}
+
+/* for options part */
+.option{
+    display: flex;
+    font-size: 2rem;
+    padding-left: 1rem;
+    visibility: visible;
+}
+.options{
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    transition: 0.3s;
+}
+.option .options a{
+    text-decoration: none;
+    color: black;
+}
+.options:hover{
+    background-color: rgb(115, 104, 104);
+    color: white;
+}
+.options:hover a{
+    color: white;
+}
+
+/* responsive part */
+.option2{
+    display: flex;
+    position: absolute;
+    font-size: 5rem;
+    right: 0;
+    height: 100%;
+    visibility: hidden;
+}
+.options2{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.option2 .options2 a{
+    text-decoration: none;
+    color: black;
+}
+.options2:hover a{
+    color: white;
+    background-color: rgb(115, 104, 104);
+}
+.options2:hover{
+    background-color: rgb(115, 104, 104);
+    color: white;
+}
+@media only screen and (min-width:744px) and (max-width:822px){
+    .header{
+        height: 8rem;
+    }
+    .title{
+        font-size: 6rem;
+        border: none;
+    }
+    .option{
+        visibility: hidden;
+    }
+    .option2{
+        visibility: visible;
+    }
+}

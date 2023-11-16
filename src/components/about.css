@@ -1,0 +1,37 @@
+html{
+    font-size: 62.5%;
+}
+.about{
+    position: relative;
+    top: 4rem;
+    margin-left: 20rem;
+    width: calc(100vw - 40rem);
+    height: auto;
+    text-align: center;
+}
+.about h1{
+    font-size: 4rem;
+}
+.about h4{
+    font-size: 3rem;
+}
+.about p{
+    font-size: 2.7rem;
+}
+@media only screen and (min-width:744px) and (max-width:822px){
+    .about{
+        top: 8rem;
+        width: 100vw;
+        text-align: center;
+        margin-left: 0;
+    }
+    .about h1{
+        font-size: 7rem;
+    }
+    .about h4{
+        font-size: 5rem;
+    }
+    .about p{
+        font-size: 4rem;
+    }
+}
